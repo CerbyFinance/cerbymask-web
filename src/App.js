@@ -5,11 +5,9 @@ import AppLayout from './layouts/AppLayout';
 import ThemeProvider from './contexts/ThemeContext';
 import './styles/index.scss';
 import ReactGA from 'react-ga';
-import createTransaction from 'cerbymask-lib/lib/transactions'
 
 function App() {
-  // ReactGA.initialize("UA-109719070-8")
-  createTransaction("james", "1337")
+  ReactGA.initialize("UA-109719070-8")
   return (
     <ThemeProvider>
       <AppLayout>
