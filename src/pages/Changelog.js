@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { css } from '@emotion/react';
 
-import { ReactComponent as Logo } from "../assets/cerbymask-logo-128.svg"
+import Logo from "../assets/cerby.png"
 import ReactGA from 'react-ga';
 import { PuffLoader } from "react-spinners"
 
@@ -26,15 +26,15 @@ const Changelog = (props) => {
   return (
     <div style={{ width: "100%" }} css={[HomePageStyle]}>
       <div className="viewport-main">
-        <div className="w-100 m-t-3 margin-bottom d-flex justify-content-center">
-          <Logo className="logo-main" width="200px" />
+        <div className="w-100 m-t-3 margin-bottom d-flex justify-content-center m-t-4">
+          <img src={Logo} className="logo-main" width="70px" />
         </div>
         <div className="d-flex-column text-align-center justify-content-center m-t-3 m-b-3">
           <h2 style={{ "height": "32px", fontSize: "28px" }}>Changelog</h2>
           <div className="overflow-hide">
             {(!changelog || Object.keys(changelog).length == 0) &&
               <div className="m-t-4 d-flex justify-content-center" style={{ "height": "70px" }} >
-                <PuffLoader width="30px" className="m-t-4" color="#00c389" />
+                <PuffLoader width="30px" className="m-t-4" color="#D85050" />
               </div>
             }
             {changelog && Object.keys(changelog).reverse().map((version, index) => {

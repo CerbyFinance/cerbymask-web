@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/android-chrome-512x512.png" style="width:200px;">
+    <img src="src/assets/cerby.png" style="width:100px;">
     <p align="center">
     <a>https://cerbymask.io</a> - <a>https://t.me/cerbymask</a>
     </p>
@@ -15,7 +15,7 @@
 After cloning the project, navigate to the root folder and run:
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Build
